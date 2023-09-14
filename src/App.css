@@ -47,3 +47,19 @@
 li a:hover {
   background-color: #69a4b3;
 }
+
+#portfolioImg {
+  width: 200px;
+  height: 200px;
+}
+
+.headerImg {
+  background-image: url("src/assets/headerImg.jpg");
+  
+}
+
+.footerElement {
+  padding-left: 10px;
+  color: white;
+}
+

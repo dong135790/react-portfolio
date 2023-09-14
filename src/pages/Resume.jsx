@@ -1,8 +1,8 @@
 function Resume() {
   return (
     <>
-      <div>Resume</div>
-      <div>Front End Proficiencies</div>
+      <h2>Resume</h2>
+      <h3>Front End Proficiencies</h3>
       <ul>
         <li>HTML</li>
         <li>CSS</li>
@@ -12,7 +12,7 @@ function Resume() {
         <li>React</li>
         <li>Bootstrap</li>
       </ul>
-      <div>Back-end Proficiencies</div>
+      <h3>Back-end Proficiencies</h3>
       <ul>
         <li>APIs</li>
         <li>Node</li>

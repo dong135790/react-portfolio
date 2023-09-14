@@ -1,7 +1,7 @@
 function Contact() {
   return (
     <>
-    <div>Contact</div>
+    <h2>Contact</h2>
     <form>
       <label htmlFor="firstName">First Name:</label><br/>
       <input type="text" id='firstName' name="firstName"/><br />
