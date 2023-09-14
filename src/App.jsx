@@ -1,25 +1,25 @@
 import "./App.css";
-/*
-1. Router is the provider
-2. Routes is our container (decides what is rendered base on path)
-3. Route is the element that we are rendering on that path
-*/
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
+import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import Navigation from "./components/Navigation";
+import { useState } from "react";
+
 function App() {
+  const [currentPage, setCurrentPage] = useState("Home");
   return (
-    <Router>
-      {/* Place here so it has the ability to control routes */}
-      <Navigation />
-      <Routes>
-        <Route element={<Home />} path="/" />
-        <Route element={<About />} path="/about" />
-        <Route element={<Contact />} path="/contact" />
-      </Routes>
-    </Router>
+    <>
+      <Navigation setCurrentPage={setCurrentPage} />
+      {/* 
+      Expressions so we can conditionally render them. 
+      && due to react unable to render boolean value true or false
+      */}
+      {currentPage === "Home" && <Home />}
+      {currentPage === "Portfolio" && <Portfolio />}
+      {currentPage === "Contact" && <Contact />}
+      {currentPage === "Resume" && <Resume />}
+    </>
   );
 }
 
