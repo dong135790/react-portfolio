@@ -1,4 +1,6 @@
 #root {
+  min-width: 50vw;
+  min-height: 100vh;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -52,12 +54,25 @@ li a:hover {
   width: 200px;
   height: 200px;
 }
-
+/* Header */
 .headerImg {
-  background-image: url("src/assets/headerImg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
   
 }
 
+.headerTxt {
+  font-size: 40px;
+  color: white;
+}
+
+.article {
+  height: 100%;
+}
+/* Footer */
 .footerElement {
   padding-left: 10px;
   color: white;

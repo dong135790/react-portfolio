@@ -1,4 +1,13 @@
 function Contact() {
+  // const handleFormSubmit = async (event) => {
+  //   event.preventDefault();
+
+  //   try {
+  //     window.location.reload();
+  //   } catch (err) {
+  //     console.error(err);
+  //   }
+  // };
   return (
     <>
     <h2>Contact</h2>

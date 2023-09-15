@@ -1,9 +1,11 @@
+import background from "../assets/headerImg.jpg"
 
 function Header() {
   return (
     <>
-    <header className="headerImg"></header>
-    <div className="headerImg"></div>
+    <article className="headerImg" style={{ backgroundImage: `url(${background})`}}>
+      <div className="headerTxt">Justin Dong</div>
+    </article>
     </>
   )
 }
