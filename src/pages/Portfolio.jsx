@@ -1,10 +1,10 @@
 import { useState } from "react";
 import museum from '../assets/museum.png'
-import readMe from '../assets/museum.png'
-import swoldemort from '../assets/museum.png'
-import textEditor from '../assets/museum.png'
-import weatherForecast from '../assets/museum.png'
-import employeeTracker from '../assets/museum.png'
+import readMe from '../assets/readme-generator.png'
+import swoldemort from '../assets/swoledemort.png'
+import textEditor from '../assets/text-editor.png'
+import weatherForecast from '../assets/weather-forecast.png'
+import employeeTracker from '../assets/employee-tracker.png'
 function Portfolio() {
 
   const [hover, setHover] = useState(false); // initial false
@@ -17,7 +17,7 @@ function Portfolio() {
     console.log([getImage], image, image2);
     setTimeout(() => {
       setHover(true);
-    }, 50);
+    }, 100);
     console.log("hovered");
   };
   
@@ -25,7 +25,7 @@ function Portfolio() {
     e.preventDefault(); // turn false
     setTimeout(() => {
       setHover(false);
-    }, 100);
+    }, 200);
   };
   return (
     <>
