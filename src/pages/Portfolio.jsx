@@ -1,5 +1,10 @@
 import { useState } from "react";
-
+import museum from '../assets/museum.png'
+import readMe from '../assets/museum.png'
+import swoldemort from '../assets/museum.png'
+import textEditor from '../assets/museum.png'
+import weatherForecast from '../assets/museum.png'
+import employeeTracker from '../assets/museum.png'
 function Portfolio() {
 
   const [hover, setHover] = useState(false); // initial false
@@ -31,7 +36,7 @@ function Portfolio() {
               {hover && <p>{"Digital Museum"}</p>}
               <img onMouseEnter={(e) => onHover(e)}
                 onMouseLeave={(e) => onHoverOver(e)}
-                className="img-responsive" id="portfolioImg" src="src/assets/museum.png" alt="digital-museum" />
+                className="img-responsive" id="portfolioImg" src={museum} alt="digital-museum" />
             </a>
           </div>
           <div className="singlePortfolioItem">
@@ -39,7 +44,7 @@ function Portfolio() {
               {hover && <p className={hover}>{"ReadMe Generator"}</p>}
               <img onMouseEnter={(e) => onHover(e)}
                 onMouseLeave={(e) => onHoverOver(e)} 
-                id="portfolioImg" src="src/assets/readme-generator.png" alt="readme-generator-via-express"/>
+                id="portfolioImg" src={readMe} alt="readme-generator-via-express"/>
             </a>
           </div>
           <div className="singlePortfolioItem">
@@ -47,7 +52,7 @@ function Portfolio() {
             {hover && <p className={hover}>{"Swoldemort"}</p>}
             <img onMouseEnter={(e) => onHover(e)}
                 onMouseLeave={(e) => onHoverOver(e)}  
-                id="portfolioImg" src="src/assets/swoledemort.png" alt="swoldemort-workout-routine"/>
+                id="portfolioImg" src={swoldemort} alt="swoldemort-workout-routine"/>
           </a>
           </div>
           <div className="singlePortfolioItem">
@@ -55,7 +60,7 @@ function Portfolio() {
           {hover && <p className={hover}>{"PWA Text Editor"}</p>}
             <img onMouseEnter={(e) => onHover(e)}
                 onMouseLeave={(e) => onHoverOver(e)}  
-                id="portfolioImg" src="src/assets/text-editor.png" alt="pwa-text-generator" />
+                id="portfolioImg" src={textEditor} alt="pwa-text-generator" />
           </a>
           </div>
           <div className="singlePortfolioItem">
@@ -63,7 +68,7 @@ function Portfolio() {
           {hover && <p className={hover}>{"Weather Forecast Dashboard"}</p>}
             <img onMouseEnter={(e) => onHover(e)}
                 onMouseLeave={(e) => onHoverOver(e)}  
-                id="portfolioImg" src="src/assets/weather-forecast.png" alt="weather-forecast-dashboard" />
+                id="portfolioImg" src={weatherForecast} alt="weather-forecast-dashboard" />
           </a>
           </div>
           <div className="singlePortfolioItem">
@@ -71,7 +76,7 @@ function Portfolio() {
           {hover && <p className={hover}>{"Employee Tracker"}</p>}
             <img onMouseEnter={(e) => onHover(e)}
                 onMouseLeave={(e) => onHoverOver(e)}  
-                id="portfolioImg" src="src/assets/employee-tracker.png" alt="pwa-text-generator" />
+                id="portfolioImg" src={employeeTracker} alt="pwa-text-generator" />
           </a>
           </div>
         </div>
