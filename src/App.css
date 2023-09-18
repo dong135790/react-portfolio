@@ -49,10 +49,13 @@
 li a:hover {
   background-color: #69a4b3;
 }
-
+p {
+  color: white;
+}
 #portfolioImg {
   width: 250px;
   height: 250px;
+  position: static;
 }
 .selfieImg {
   width: 180px;
