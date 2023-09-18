@@ -54,6 +54,10 @@ li a:hover {
   width: 250px;
   height: 250px;
 }
+.selfieImg {
+  width: 180px;
+  height: 200px; 
+}
 /* Header */
 .headerImg {
   background-repeat: no-repeat;
